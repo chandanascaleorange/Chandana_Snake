@@ -5,20 +5,53 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:white;
+    background-image: url('https://wallpapers.com/images/hd/snake-game-landscape-jo62cmzftq0wei66.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .game-container {
     text-align: center;
 }
+
 canvas {
     border: 1px solid black;
     display: block;
     margin-bottom: 10px;
+    background-color: transparent;
 }
+
 .game-info {
     display: flex;
     justify-content: space-between;
     width: 400px;
     margin: 0 auto;
+    background-color:none;
+    padding: 10px;
+    border-radius: 5px;
 }
-        
+
+#levelDisplay, #scoreDisplay {
+    color:black;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.game-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:none;
+    color:none;
+    border: none;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-button:hover {
+    background-color: rgba(50, 50, 50, 0.7);
+}
